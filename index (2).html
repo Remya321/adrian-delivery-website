@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="e">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Adrian Delivery Services provides delivery workforce, rider deployment, fleet and last-mile delivery support for businesses in Qatar.">
+  <meta name="theme-color" content="#08172b">
+  <title>Adrian Delivery Services | Delivery & Logistics Solutions in Qatar</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+    :root{--navy:#08172b;--navy2:#102844;--gold:#c9a45c;--gold2:#e2c786;--ink:#182536;--muted:#637184;--paper:#f7f8fa;--white:#fff;--line:#e7eaf0}
+    *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;color:var(--ink);line-height:1.6;background:#fff}
+    a{color:inherit;text-decoration:none}.container{width:min(1160px,92%);margin:auto}
+    .topbar{background:#061222;color:#dce3ec;font-size:13px;padding:9px 0}.topbar .container{display:flex;justify-content:space-between;gap:15px;flex-wrap:wrap}
+    header{position:sticky;top:0;z-index:20;background:rgba(8,23,43,.97);backdrop-filter:blur(12px);border-bottom:1px solid rgba(255,255,255,.1)}
+    nav{height:78px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+    .brand{display:flex;align-items:center;gap:12px;color:#fff;font-weight:800;letter-spacing:.07em}.brand-mark{width:43px;height:43px;border:1px solid var(--gold);border-radius:12px;display:grid;place-items:center;color:var(--gold2);font-size:19px;font-weight:900}.brand small{display:block;color:#c5ced9;font-size:9px;letter-spacing:.22em;font-weight:600;margin-top:1px}
+    .navlinks{display:flex;gap:26px;align-items:center;color:#e7edf5;font-size:14px}.navlinks a:hover{color:var(--gold2)}.nav-cta,.btn{display:inline-flex;align-items:center;justify-content:center;background:var(--gold);color:#101b29;padding:12px 20px;border-radius:4px;font-weight:800;font-size:13px;letter-spacing:.02em;transition:.2s}.nav-cta:hover,.btn:hover{background:var(--gold2);transform:translateY(-1px)}
+    .menu{display:none;background:none;border:1px solid #637184;color:#fff;padding:8px 11px;border-radius:4px;font-size:20px}
+    .hero{background:linear-gradient(105deg,rgba(5,17,32,.98) 0%,rgba(8,23,43,.91) 55%,rgba(8,23,43,.50) 100%),url('images/adrian-bike-delivery.jpg') center/cover;min-height:650px;color:#fff;display:flex;align-items:center;position:relative;overflow:hidden}
+    .hero:after{content:"";position:absolute;right:-100px;bottom:-180px;width:520px;height:520px;border:1px solid rgba(201,164,92,.25);border-radius:50%;box-shadow:0 0 0 45px rgba(201,164,92,.035),0 0 0 90px rgba(201,164,92,.025)}
+    .hero-content{max-width:720px;padding:90px 0;position:relative;z-index:1}.eyebrow{color:var(--gold2);font-size:12px;font-weight:800;letter-spacing:.22em;text-transform:uppercase}.hero h1{font-size:clamp(42px,6vw,70px);line-height:1.06;margin:18px 0 22px;letter-spacing:-.04em}.hero h1 span{color:var(--gold2)}.hero p{font-size:18px;color:#d7e0eb;max-width:620px;margin:0 0 32px}.hero-actions{display:flex;gap:14px;flex-wrap:wrap}.btn-outline{display:inline-flex;align-items:center;justify-content:center;border:1px solid rgba(255,255,255,.55);color:#fff;padding:12px 20px;border-radius:4px;font-size:13px;font-weight:700}.btn-outline:hover{border-color:var(--gold2);color:var(--gold2)}
+    .trustbar{background:#fff;box-shadow:0 10px 35px rgba(12,30,52,.08);position:relative;margin-top:-1px}.trustgrid{display:grid;grid-template-columns:repeat(3,1fr);padding:25px 0}.trustitem{padding:5px 28px;border-right:1px solid var(--line)}.trustitem:first-child{padding-left:0}.trustitem:last-child{border:0}.trustitem strong{display:block;color:var(--navy);font-size:15px}.trustitem span{font-size:12px;color:var(--muted)}
+    section{padding:94px 0}.section-head{max-width:680px;margin-bottom:42px}.section-head.center{text-align:center;margin:0 auto 45px}.kicker{color:#a77f35;font-size:11px;font-weight:900;letter-spacing:.2em;text-transform:uppercase}.section-head h2{font-size:clamp(30px,4vw,44px);line-height:1.15;color:var(--navy);margin:12px 0 15px;letter-spacing:-.03em}.section-head p{color:var(--muted);margin:0}
+    .about-grid{display:grid;grid-template-columns:1fr 1fr;gap:65px;align-items:center}.about-visual{min-height:420px;background:linear-gradient(0deg,rgba(8,23,43,.35),rgba(8,23,43,.05)),url('https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1200&q=85') center/cover;border-radius:8px;position:relative}.about-tag{position:absolute;bottom:24px;left:24px;background:var(--navy);color:#fff;padding:18px 22px;border-left:3px solid var(--gold)}.about-tag b{display:block;color:var(--gold2);font-size:14px}.about-tag span{font-size:12px;color:#d9e0e9}.checklist{list-style:none;padding:0;margin:25px 0}.checklist li{padding:9px 0 9px 30px;position:relative;color:#344255}.checklist li:before{content:"✓";position:absolute;left:0;color:#a77f35;font-weight:900}
+    .services{background:var(--paper)}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.card{background:#fff;padding:30px 27px;border:1px solid #edf0f4;border-radius:7px;transition:.25s}.card:hover{transform:translateY(-5px);box-shadow:0 16px 35px rgba(10,28,48,.09);border-color:#d8c08d}.icon{width:48px;height:48px;display:grid;place-items:center;border-radius:6px;background:#f7f1e5;color:#96702d;font-size:22px;margin-bottom:22px}.card h3{margin:0 0 10px;color:var(--navy);font-size:18px}.card p{margin:0;color:var(--muted);font-size:14px}
+    .why{background:var(--navy);color:#fff}.why .section-head h2{color:#fff}.why .section-head p{color:#c1ccd9}.whygrid{display:grid;grid-template-columns:repeat(4,1fr);gap:28px}.whyitem{border-top:1px solid rgba(201,164,92,.65);padding-top:20px}.whyitem b{display:block;color:var(--gold2);font-size:17px;margin-bottom:8px}.whyitem p{margin:0;color:#c1ccd9;font-size:13px}
+    .processgrid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px}.step{padding:24px;border:1px solid var(--line);border-radius:6px}.stepnum{color:var(--gold);font-size:30px;font-weight:900}.step h3{font-size:16px;color:var(--navy);margin:8px 0}.step p{font-size:13px;color:var(--muted);margin:0}
+    .cta{background:linear-gradient(100deg,#102844,#08172b);color:#fff;padding:65px 0}.ctagrid{display:flex;align-items:center;justify-content:space-between;gap:30px}.cta h2{font-size:clamp(27px,4vw,38px);line-height:1.15;margin:0 0 10px}.cta p{color:#c8d2df;margin:0}
+    .contact{background:var(--paper)}.contactgrid{display:grid;grid-template-columns:.8fr 1.2fr;gap:55px}.contact-info{background:var(--navy);color:#fff;padding:35px;border-radius:7px}.contact-info h3{font-size:23px;margin:0 0 12px}.contact-info p{color:#c4cfdd;font-size:14px}.contact-line{padding:16px 0;border-top:1px solid rgba(255,255,255,.13);font-size:14px}.contact-line b{display:block;color:var(--gold2);font-size:11px;letter-spacing:.12em;text-transform:uppercase;margin-bottom:5px}
+    form{background:#fff;padding:35px;border:1px solid var(--line);border-radius:7px;display:grid;grid-template-columns:1fr 1fr;gap:16px}label{display:block;font-size:12px;font-weight:800;color:#344255;margin-bottom:7px}input,textarea,select{width:100%;border:1px solid #dce2e9;border-radius:4px;padding:13px;font:inherit;font-size:14px;background:#fff;color:var(--ink)}textarea{min-height:120px;resize:vertical}.full{grid-column:1/-1}form button{border:0;cursor:pointer;justify-self:start}
+    footer{background:#061222;color:#d6deea;padding:34px 0}.footerrow{display:flex;align-items:center;justify-content:space-between;gap:20px;flex-wrap:wrap}.footerrow small{color:#9caabd}.footerlinks{display:flex;gap:18px;font-size:12px}.footerlinks a:hover{color:var(--gold2)}
+    @media(max-width:850px){.navlinks{display:none;position:absolute;top:78px;left:0;right:0;background:#08172b;padding:22px 4%;flex-direction:column;align-items:flex-start;border-top:1px solid #26384d}.navlinks.open{display:flex}.menu{display:block}.nav-cta{display:none}.about-grid,.contactgrid{grid-template-columns:1fr;gap:35px}.cards{grid-template-columns:repeat(2,1fr)}.whygrid,.processgrid{grid-template-columns:repeat(2,1fr)}.hero{min-height:590px}}
+    @media(max-width:560px){.trustgrid{grid-template-columns:1fr;gap:15px}.trustitem,.trustitem:first-child{padding:0;border:0}.cards,.whygrid,.processgrid{grid-template-columns:1fr}.hero h1{font-size:43px}.hero p{font-size:16px}.about-visual{min-height:300px}section{padding:68px 0}.ctagrid{align-items:flex-start;flex-direction:column}form{grid-template-columns:1fr;padding:23px}.full{grid-column:auto}.topbar .container{font-size:11px}}
+  </style>
+</head>
+<body>
+  <div class="topbar"><div class="container"><span>Delivery & logistics support across Qatar</span><span>Business enquiries: info@adriandelivery.com</span></div></div>
+  <header>
+    <nav class="container">
+      <a class="brand" href="#home" aria-label="Adrian Delivery Services home"><span class="brand-mark">A</span><span>ADRIAN<small>DELIVERY SERVICES</small></span></a>
+      <div class="navlinks" id="navlinks"><a href="#home">Home</a><a href="#about">About</a><a href="#services">Services</a><a href="#why-us">Why Adrian</a><a href="#contact">Contact</a></div>
+      <a class="nav-cta" href="#contact">REQUEST A QUOTE</a>
+      <button class="menu" id="menu" aria-label="Open navigation" aria-expanded="false">☰</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="container"><div class="hero-content">
+        <div class="eyebrow">Your delivery operations partner in Qatar</div>
+        <h1>Moving business<br><span>forward, together.</span></h1>
+        <p>Reliable delivery workforce, rider deployment and fleet support designed to help businesses keep every delivery moving.</p>
+        <div class="hero-actions"><a class="btn" href="#contact">DISCUSS YOUR REQUIREMENTS</a><a class="btn-outline" href="#services">EXPLORE OUR SERVICES</a></div>
+      </div></div>
+    </section>
+
+    <div class="trustbar"><div class="container trustgrid">
+      <div class="trustitem"><strong>Delivery workforce solutions</strong><span>People and operational support for growing delivery needs</span></div>
+      <div class="trustitem"><strong>Flexible fleet support</strong><span>Motorcycle and vehicle resources for delivery operations</span></div>
+      <div class="trustitem"><strong>Qatar-focused operations</strong><span>Local coordination and responsive service support</span></div>
+    </div></div>
+
+    <section id="about"><div class="container about-grid">
+      <div class="about-visual"><div class="about-tag"><b>ADRIAN DELIVERY SERVICES</b><span>Practical logistics. Dependable people.</span></div></div>
+      <div><div class="section-head"><div class="kicker">Who we are</div><h2>A dependable partner for the last mile.</h2><p>Adrian Delivery Services supports businesses with delivery workforce and fleet solutions in Qatar. We focus on practical coordination, dependable service and the people behind every successful delivery.</p></div>
+        <ul class="checklist"><li>Delivery rider and driver deployment support</li><li>Fleet and vehicle coordination</li><li>Workforce and attendance management</li><li>Operational support for restaurant and e-commerce delivery</li></ul>
+        <a class="btn" href="#contact">TALK TO OUR TEAM</a>
+      </div>
+    </div></section>
+
+    <section class="services" id="services"><div class="container">
+      <div class="section-head center"><div class="kicker">What we do</div><h2>Solutions built around your operation.</h2><p>Flexible delivery support that can be aligned with your business model, service area and operational requirements.</p></div>
+      <div class="cards">
+        <article class="card"><div class="icon">◈</div><h3>Delivery Rider Deployment</h3><p>Rider sourcing, deployment coordination and workforce support for businesses with ongoing delivery requirements.</p></article>
+        <article class="card"><div class="icon">▣</div><h3>Fleet & Vehicle Support</h3><p>Motorcycle and vehicle resources, fleet coordination and day-to-day operational assistance.</p></article>
+        <article class="card"><div class="icon">◎</div><h3>Last-Mile Delivery Support</h3><p>Delivery workforce solutions for restaurants, cloud kitchens, retail and e-commerce operations.</p></article>
+        <article class="card"><div class="icon">◷</div><h3>Workforce Management</h3><p>Attendance coordination, shift planning, rider follow-up and operational communication.</p></article>
+        <article class="card"><div class="icon">◇</div><h3>Operations Coordination</h3><p>Responsive coordination to help manage daily delivery activity, replacements and service continuity.</p></article>
+        <article class="card"><div class="icon">✦</div><h3>Business Partnerships</h3><p>Scalable delivery support arrangements shaped around partner requirements and agreed service levels.</p></article>
+      </div>
+    </div></section>
+
+    <section class="why" id="why-us"><div class="container">
+      <div class="section-head"><div class="kicker">Why Adrian</div><h2>Professional support. Clear communication. Reliable execution.</h2><p>We understand that delivery performance depends on people, vehicles and consistent coordination. Our approach brings these elements together.</p></div>
+      <div class="whygrid">
+        <div class="whyitem"><b>People-first</b><p>We value a supported, coordinated workforce as the foundation of service delivery.</p></div>
+        <div class="whyitem"><b>Operational focus</b><p>Practical day-to-day coordination to help keep delivery operations on track.</p></div>
+        <div class="whyitem"><b>Flexible solutions</b><p>Support arrangements can be discussed to suit your scale and business needs.</p></div>
+        <div class="whyitem"><b>Local knowledge</b><p>Qatar-based business focus and an understanding of local delivery operations.</p></div>
+      </div>
+    </div></section>
+
+    <section><div class="container">
+      <div class="section-head center"><div class="kicker">How we work</div><h2>A straightforward partnership process.</h2><p>Start with your requirements. We will discuss a practical delivery support solution.</p></div>
+      <div class="processgrid">
+        <div class="step"><div class="stepnum">01</div><h3>Understand</h3><p>We learn about your delivery volumes, locations and service expectations.</p></div>
+        <div class="step"><div class="stepnum">02</div><h3>Plan</h3><p>We discuss workforce, fleet and operational requirements.</p></div>
+        <div class="step"><div class="stepnum">03</div><h3>Deploy</h3><p>We coordinate the agreed resources and operational arrangements.</p></div>
+        <div class="step"><div class="stepnum">04</div><h3>Support</h3><p>We stay connected to help manage ongoing operational needs.</p></div>
+      </div>
+    </div></section>
+
+    <section class="cta"><div class="container ctagrid"><div><h2>Looking for a delivery partner in Qatar?</h2><p>Tell us what your operation needs. Let's explore how Adrian can support you.</p></div><a class="btn" href="#contact">START A CONVERSATION</a></div></section>
+
+    <section class="contact" id="contact"><div class="container">
+      <div class="section-head center"><div class="kicker">Get in touch</div><h2>Let's discuss your delivery requirements.</h2><p>Contact our team for business partnerships, workforce requirements and service enquiries.</p></div>
+      <div class="contactgrid">
+        <div class="contact-info"><h3>Adrian Delivery Services</h3><p>Delivery workforce and logistics support for businesses in Qatar.</p>
+          <div class="contact-line"><b>Email</b><a href="mailto:info@adriandelivery.com">info@adriandelivery.com</a></div>
+          <div class="contact-line"><b>Human Resources</b><a href="mailto:hr@adriandelivery.com">hr@adriandelivery.com</a></div>
+          <div class="contact-line"><b>Location</b>Doha, State of Qatar</div>
+          <div class="contact-line"><b>Business enquiries</b>Use the enquiry form and our team can follow up.</div>
+        </div>
+        <form name="business-enquiry" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+          <input type="hidden" name="form-name" value="business-enquiry">
+          <p style="display:none"><label>Do not fill this out: <input name="bot-field"></label></p>
+          <div><label for="name">Your name *</label><input id="name" name="name" required placeholder="Full name"></div>
+          <div><label for="company">Company</label><input id="company" name="company" placeholder="Company name"></div>
+          <div><label for="email">Email address *</label><input id="email" name="email" type="email" required placeholder="name@company.com"></div>
+          <div><label for="phone">Phone / WhatsApp</label><input id="phone" name="phone" placeholder="+974"></div>
+          <div class="full"><label for="service">What do you need?</label><select id="service" name="service"><option>Delivery rider deployment</option><option>Fleet and vehicle support</option><option>Last-mile delivery support</option><option>Workforce management</option><option>Business partnership</option><option>Other enquiry</option></select></div>
+          <div class="full"><label for="message">Your message *</label><textarea id="message" name="message" required placeholder="Tell us briefly about your requirements..."></textarea></div>
+          <div class="full"><button class="btn" type="submit">SEND ENQUIRY</button></div>
+        </form>
+      </div>
+    </div></section>
+  </main>
+  <footer><div class="container footerrow"><a class="brand" href="#home"><span class="brand-mark">A</span><span>ADRIAN<small>DELIVERY SERVICES</small></span></a><div class="footerlinks"><a href="#about">About</a><a href="#services">Services</a><a href="#contact">Contact</a></div><small>© <span id="year"></span> Adrian Delivery Services. All rights reserved.</small></div></footer>
+  <script>
+    const menu=document.getElementById('menu'),links=document.getElementById('navlinks');
+    menu.addEventListener('click',()=>{const open=links.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));});
+    links.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{links.classList.remove('open');menu.setAttribute('aria-expanded','false')}));
+    document.getElementById('year').textContent=new Date().getFullYear();
+  </script>
+</body>
+</html>
